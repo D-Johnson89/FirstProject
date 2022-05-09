@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Inventory from "./Inventory";
 
 interface PlayerProps {
 	name: string;
@@ -6,16 +7,13 @@ interface PlayerProps {
 	img?: any;
 }
 
-const Player = ({ name, inventory }: PlayerProps) => {
-	/*const [player, setPlayer] = useState<{
-		name: string;
-		inventory: string[];
-	}>({ name: "", inventory: [] });*/
+const Player = ({ name, img, inventory }: PlayerProps) => {
 	return (
 		<div>
 			<div>Player Name: {name}</div>
-			<img src="https://via.placeholder.com/150x250" alt="" />
-			<div>Inventory: {inventory}</div>
+			<img src={img} alt="" />
+
+			<Inventory items={inventory} />
 		</div>
 	);
 };
