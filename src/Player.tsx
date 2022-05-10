@@ -14,11 +14,18 @@ const Player = ({ name, inventory, img }: PlayerProps) => {
         display: "flex",
         width: "fit-content",
         border: "solid green 2px",
+        padding: "1rem",
       }}
     >
-      <div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          border: "solid 3px orange",
+        }}
+      >
         <img src={img} alt="player" />
-        <div>Player Name: {name}</div>
+        <div>{name}</div>
       </div>
 
       <Inventory items={inventory} />

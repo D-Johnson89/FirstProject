@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css";
+import "./App.scss";
 import Player from "./Player";
 
 function App() {
@@ -8,15 +8,16 @@ function App() {
     inventory: ["Sword", "Shield", "Potion"],
     img: "https://via.placeholder.com/150",
   });
+
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="container">
         <Player
           name={player.name}
           inventory={player.inventory}
           img={player.img}
         />
-      </header>
+      </div>
     </div>
   );
 }

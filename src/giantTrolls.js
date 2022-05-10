@@ -1,4 +1,5 @@
 //"use strict";
+/*
 
 const prompt = require("prompt-sync")({ sigint: true });
 
@@ -121,3 +122,4 @@ function fightBoss(player1) {
 }
 
 getName();
+*/
