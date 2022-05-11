@@ -1,0 +1,51 @@
+.player {
+	color: white;
+	text-align: left;
+	background-color: darkslategray;
+	border: 2px solid grey;
+	border-radius: 4px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	/*width: 160px;
+	height: 488px;*/
+}
+
+/*.player .inventory {
+	display: flex;
+	flex-wrap: wrap;
+}*/
+
+.player > * {
+	flex-grow: 1;
+	flex-basis: 20%;
+}
+
+.character {
+	border: 2px solid blue;
+	text-align: center;
+	border-radius: 4px;
+	padding: 2px;
+}
+
+.inventory {
+	color: black;
+	background-color: rgb(92, 158, 158);
+	border: 2px solid black;
+	border-radius: 4px;
+	height: fit-content;
+	/*width: fit-content;*/
+	padding: 0.1em;
+	display: grid;
+	grid-template-columns: 47% 47%;
+
+	/*flex-direction: row;*/
+}
+
+.items {
+	border: 2px solid red;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	text-align: center;
+}

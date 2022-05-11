@@ -7,9 +7,16 @@ interface InventoryProps {
 const Inventory = ({ items }: InventoryProps) => {
 	return (
 		<div>
-			<div>Inventory:</div>
+			<div style={{ border: "1px solid white" }}>Inventory:</div>
 			{items?.map((item, index) => (
-				<img src="https://via.placeholder.com/40" key={index} alt="" />
+				<div className="items">
+					<img
+						src="https://via.placeholder.com/40"
+						key={index}
+						alt=""
+					/>
+					<div>{item.toUpperCase()}</div>
+				</div>
 			))}
 		</div>
 	);
