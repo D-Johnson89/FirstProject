@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-//import "./player.css";
 import Player from "./Player";
+import Hall from "./Hall";
 
 function App() {
 	const [player, setPlayer] = useState({
@@ -16,6 +16,7 @@ function App() {
 				inventory={player.inventory}
 				img={player.img}
 			/>
+			<Hall />
 		</div>
 	);
 }
