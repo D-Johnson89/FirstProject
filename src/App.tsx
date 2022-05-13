@@ -16,7 +16,7 @@ function App() {
 				inventory={player.inventory}
 				img={player.img}
 			/>
-			<Hall />
+			<Hall /*playerStats={player}*/ />
 		</div>
 	);
 }

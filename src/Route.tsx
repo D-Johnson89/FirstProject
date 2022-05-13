@@ -11,6 +11,7 @@ const GameRoutes = () => {
 				<Route path="/" element={<Intro />} />
 				<Route path="/game" element={<App />} />
 				<Route path="/room" element={<Room />} />
+				<Route path="/hall" element={<App />} />
 			</Routes>
 		</div>
 	);

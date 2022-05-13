@@ -1,16 +1,17 @@
 import React from "react";
 import Door from "./Doors";
+import { doors } from "./utility";
 
-/*interface DoorProps {
+const Hall = (playerStats: {
+	name?: string;
+	inventory?: string[];
 	img?: any;
-}*/
-
-const Hall = (/*{ img }: DoorProps*/) => {
+}) => {
 	return (
 		/*Hall Image*/
-		<div>
-			{[0, 1, 2].map((door, index) => (
-				<Door />
+		<div style={{ display: "flex", flexDirection: "column" }}>
+			{doors.map((door: any, index: number) => (
+				<Door clickEvent={door.clickEvent} />
 			))}
 		</div>
 	);
