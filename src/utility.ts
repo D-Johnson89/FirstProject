@@ -24,7 +24,7 @@ export const doors: any = [
 	{
 		clickEvent: () => {
 			let boss = chooseBoss();
-			console.log(`Returned Boss Room ${boss}"`);
+			console.log(`Returned Boss Room ${boss}`);
 		},
 	},
 	{
@@ -35,7 +35,7 @@ export const doors: any = [
 	{
 		clickEvent: () => {
 			let item = chooseItem();
-			console.log(`Returned Item Room ${item}"`);
+			console.log(`Returned Item Room ${item}`);
 		},
 	},
 ];

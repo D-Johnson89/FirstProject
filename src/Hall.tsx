@@ -9,7 +9,13 @@ const Hall = (playerStats: {
 }) => {
 	return (
 		/*Hall Image*/
-		<div style={{ display: "flex", flexDirection: "column" }}>
+		<div
+			style={{
+				border: "3px solid green",
+				display: "flex",
+				height: "160px",
+			}}
+		>
 			{doors.map((door: any, index: number) => (
 				<Door clickEvent={door.clickEvent} />
 			))}
